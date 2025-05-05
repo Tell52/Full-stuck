@@ -1,6 +1,8 @@
 name,email,vehicle_plate,type,member_points,discount_rate
-T,ree,13,1,65,0.10
-Te,re,2,0,135,0.00
-Tee,reee,312,0,30,0.00
-A,A,123,1,0,0.10
-Kan,Kan,123,1,40,0.10
+Lae,Lae,A1,1,0,0.10
+Nine,Nine,B2,1,0,0.10
+Kan,Kan,C3,0,0,0.00
+James,James,D4,0,0,0.00
+lif,lif,E5,0,0,0.00
+Book,Book,F6,1,0,0.10
+Martin,Martin,G1,0,0,0.00
