@@ -22,11 +22,15 @@ void usermenu(User* user){
 
         if(user->type == SUB_MEMBER){
             printf("4. Check Member Points\n");
+            printf("5. Logout\nChoice: ");
         }
         else if(user->type == ADMIN){
             printf("4. Admin Menu\n");
+            printf("5. Logout\nChoice: ");
         }
-        printf("5. Logout\nChoice: ");
+        else{
+            printf("4. Logout\nChoice: ");
+        }
         if(scanf("%d", &choice) != 1){
             printf("Invalid input.\n");
             while(getchar() != '\n');
@@ -51,10 +55,16 @@ void usermenu(User* user){
                 else if (user->type == ADMIN){
                     admin_menu();
                 }
+                else{
+                    printf("Logging out...\n");
+                    return;
+                }
                 break;
             case 5: 
-                printf("Logging out...\n");
-                return;
+                if(user->type == SUB_MEMBER || user->type == ADMIN){
+                    printf("Logging out...\n");
+                    return;
+                }
             default: 
                 printf("Invalid choice. Try again.\n");
         }
