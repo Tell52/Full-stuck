@@ -14,15 +14,15 @@
   - Data Persistence
 
 # How to run
-  # Clone this repository
+  #Clone this repository
   git clone https://github.com/Tell52/Full-stuck.git
   
   cd Full-stuck
   
-  # Compile the program
+  #Compile the program
   gcc main.c inventory.c menu_functions.c user_management.c -o run
   
-  # Run the program
+  #Run the program
   ./run
 
 # Test case
