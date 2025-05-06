@@ -30,15 +30,15 @@
       Test Case: Register a new user
       Input: Name = "New1", Email = "new1", Vehicle Plate = "AB12", Type = "Normal" or Type = "Sub-member"
       Expected Output: User successfully registered and added to " users.csv "
-  2. Duplicate Email Registration
+  3. Duplicate Email Registration
       Test Case: Register a user with an existing email
       Input: Name = "New1", Email = "new1" (already in database)
       Expected Output: Error message: "Email already registered."
-  3. User Login
+  5. User Login
       Test Case: User login with valid credentials
       Input: Email = "new1"
       Expected Output: " Welcome Back, new1 (Type) " and redirected to user menu
-  4. Invalid User Login
+  7. Invalid User Login
       Test Case: User login with non-existent email
       Input: Email = "nonuser@example.com"
       Expected Output: Error message: "User not found. Please register first."
@@ -53,19 +53,19 @@
       Test Case: Schedule a new appointment (1.Book Service) (Normal)
       Input: User = "new1", Service = "Repair", Cost = $100, Priority = "No"
       Expected Output: Appointment saved to appointments.csv, added to queue
-  2. Create Appointment
+  3. Create Appointment
       Test Case: Schedule appointment with priority (1.Book Service) (Sub-member)
       Input: User = "new2", Service = "Repair", Cost = $135, Priority = "Yes"
       Expected Output: Appointment added to priority queue, processed earlier than normal queue
-  3. View Appointment Queue
+  4. View Appointment Queue
       Test Case: User views appointment queue
       Input: 3. View Appointments
       Expected Output: Show all pending appointments
-  4. Cancel Appointment
+  5. Cancel Appointment
       Test Case: User cancels their appointment (In View Appointments)
       Input: 1. Cancel an appointment 
       Expected Output: Appointment removed from queue, updated in appointments.csv
-  5. Process Next Appointment (FIFO Handling) (UserType: admin in Admin Menu)
+  6. Process Next Appointment (FIFO Handling) (UserType: admin in Admin Menu)
       Test Case: Process next available appointment
       Input: 5. Process Next Appointment
       Expected Output: Next appointment removed from queue, message : " Processing appointment for (name) - Appointment Cost: (price)"
