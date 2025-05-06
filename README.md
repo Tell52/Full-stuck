@@ -16,6 +16,7 @@
 # How to run
   # Clone this repository
   git clone https://github.com/Tell52/Full-stuck.git
+  
   cd Full-stuck
   
   # Compile the program
@@ -27,21 +28,30 @@
 # Test case
   # User Management Test Cases (user_management.c)
   1. Register New User
-      Test Case: Register a new user
-      Input: Name = "New1", Email = "new1", Vehicle Plate = "AB12", Type = "Normal" or Type = "Sub-member"
-      Expected Output: User successfully registered and added to " users.csv "
+       Test Case: Register a new user
+
+       Input: Name = "New1", Email = "new1", Vehicle Plate = "AB12", Type = "Normal" or Type = "Sub-member"
+
+       Expected Output: User successfully registered and added to " users.csv "
   3. Duplicate Email Registration
       Test Case: Register a user with an existing email
+     
       Input: Name = "New1", Email = "new1" (already in database)
+     
       Expected Output: Error message: "Email already registered."
+     
   5. User Login
       Test Case: User login with valid credentials
+     
       Input: Email = "new1"
+     
       Expected Output: " Welcome Back, new1 (Type) " and redirected to user menu
+     
   7. Invalid User Login
       Test Case: User login with non-existent email
-      Input: Email = "nonuser@example.com"
+      Input: Email = "new123"
       Expected Output: Error message: "User not found. Please register first."
+     
   # Inventory Management Test Cases (inventory.c)
   1. Reduce Inventory After Purchase
       Test Case: Buy a part
